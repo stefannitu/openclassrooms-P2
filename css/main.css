@@ -1,0 +1,14 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+body {
+  background: url(/assests/Desktop\ -\ 1.png) no-repeat top;
+}
+div {
+  height: 2000px;
+}
