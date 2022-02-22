@@ -51,7 +51,7 @@ header nav a:hover{
 	border-color: var(--blue);
 }
 main{
-	width: 96%;
+	width: 97%;
 	margin:20px auto;
 }
 .search-form{ 		
@@ -128,16 +128,13 @@ main{
 	.accomodation-mostpopular-section{
 		margin-top:10px;
 		display: flex;		
-		gap:10px;
+		gap:20px;
 		justify-content: space-between;
 	}
 	.accomodation-wrapper{
 		background-color: var(--gray);
 		border-radius: 30px;
-		padding: 20px;	
-		/* width: 70%;	 */
-		/* width: max-content; */
-		/* min-width: 650px;	 */
+		padding: 20px;			
 		max-width: 70%;
 		display: flex;
 		flex-direction: column;
@@ -148,7 +145,7 @@ main{
 	.accomodation-wrapper .accomodation-card-gallery{
 		display: flex;
 		flex-wrap: wrap;
-		gap:10px;
+		gap:20px;
 		justify-content: space-around;
 	}
 	.accomodation-wrapper .accomodation-card-gallery .accomodation-card-individual{
@@ -157,7 +154,7 @@ main{
 		flex-basis: 25%;
 		/* card min max size */
 		min-width: 185px;
-		max-width: 335px;
+		max-width: 345px;
 		min-height: fit-content;
 		max-height: 220px;
 		flex-grow: 1;
