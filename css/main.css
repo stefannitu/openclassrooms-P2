@@ -165,7 +165,7 @@ main{
 		border-radius: 20px;
 		box-shadow: var(--box-shadow);		
 	}	
-	.accomodation-card-individual img{
+	.accomodation-card-individual > img{
 		width: 100%;
 		height: 56%;
 		object-fit: cover;
