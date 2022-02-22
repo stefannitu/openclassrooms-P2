@@ -1,13 +1,390 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div>&nbsp;</div>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<!-- setting viewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- loading normalize.css  -->
+		<link rel="stylesheet" href="/css/normalize.css" />
+
+		<!-- importing font RALEWAY from GoogleFonts  -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400;1,600&family=Raleway:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- font awesome kit -->
+		<script
+			src="https://kit.fontawesome.com/8e9e3380f2.js"
+			crossorigin="anonymous"
+		></script>
+		<!-- ================ -->
+
+
+		<!-- loading main.css -->
+		<link rel="stylesheet" href="css/main.css" />
+
+		<title>Booki</title>
+	</head>
+	<body>
+		<div class="body-wrapper">
+			<!-- ============================ -->
+			<!-- START logo + nav menu -->
+			<!-- ============================ -->
+
+			<header>
+				<!--Start LOGO -->
+				<!-- 
+				use booki@3x.png for mobile
+				use booki.png for desktop
+				 -->
+			<a href="#">
+				<picture>					
+					<source
+						media="(max-width: 798px)"
+						srcset="/assests/logo/Booki@3x.png" 
+					/>
+					<img src="/assests/logo/Booki.png" alt="Booki Logo" />
+				</picture>
+			</a>
+				<!-- END LOGO -->
+
+				<!-- Start NAV MENU -->
+				<nav class="menu-wrapper">
+					<ul class="menu-list">
+						<li class="menu-list-item"><a href="#">Accomodation</a></li>
+						<li class="menu-list-item"><a href="#">Activities</a></li>
+					</ul>
+				</nav>
+				<!-- END Nav Menu -->
+			</header>
+
+			<!-- ============================ -->
+			<!-- END logo + nav menu -->
+			<!-- ============================ -->
+
+			<!-- ======================== -->
+			<!-- START main section of page -->
+			<!-- ======================== -->
+
+			<main>
+				<!-- START of Search Form -->
+				<h2>Find a place for your dream vacation</h2>
+				<p>Downtown or in nature</p>				
+				<form class="search-form">	
+						<label for="location-input"><i class="fas fa-map-marker-alt"></i></label>
+						<input type="text" class="location-input" id="location-input">						
+						<button type="submit" class="submit-location"><span>Search</span>
+						<i class="fas fa-search"></i>
+						</button>										
+				</form>	
+				<!-- END of Search Form -->
+
+				<!-- START of filters -->
+				<section class="search-filters-wrapper">					
+					<ul class="filters-menu-list">
+						<li class="filters-menu-item first-item">
+							<h3>Filters</h3>
+						</li>
+						<li class="filters-menu-item">
+							<a href="#"><i class="fas fa-map-marker-alt"></i> <span>Low Cost</span></a>							
+						</li>
+						<li class="filters-menu-item">
+							<a href="#"><i class="fas fa-map-marker-alt"></i> <span>Family-Friendly</span></a>							
+						</li>
+						<li class="filters-menu-item">
+							<a href="#"><i class="fas fa-map-marker-alt"></i> <span>Romantic</span></a>							
+						</li>
+						<li class="filters-menu-item">
+							<a href="#"><i class="fas fa-map-marker-alt"></i> <span>Pet Allowed</span></a>							
+						</li>						
+					</ul>
+					<div class="search-filters-mention">
+						<i class="fas fa-info"></i>
+						<p>
+							More than 500 acomodation are available in this location
+						</p>
+					</div>
+				</section>	
+				<!-- END of Filters -->
+				
+				<!-- START of ACCOMODATION and MOST POPULAR cards -->
+				<section class="accomodation-mostpopular-section">	
+					<!--++++++++++++++++++++++++++++++++++-->				
+					<!-- START of accomodation -->
+					<div class="accomodation-wrapper">
+						<h3>Accomodations in Marseille</h3>
+						<div class="accomodation-card-gallery">
+							<div class="accomodation-card-individual">
+								<picture class="accomodation-card-picture">
+									<source 
+									media="(max-width: 798px)"
+									srcset="/assests/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+									/>
+									<img src="/assests/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="eisetopia picture">
+								</picture>
+								<div class="accomodation-card-description">
+									<h4>Auberge la Cannebiere</h4>
+									<p>Night starting at 25 &euro;</p>
+									<div class="accomodation-card-description-stars">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
+								</div>
+							</div>
+							<div class="accomodation-card-individual">
+								<picture class="accomodation-card-picture">
+									<source 
+									media="(max-width: 798px)"
+									srcset="/assests/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+									/>
+									<img src="/assests/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="eisetopia picture">
+								</picture>
+								<div class="accomodation-card-description">
+									<h4>Auberge la Cannebiere</h4>
+									<p>Night starting at 25 &euro;</p>
+									<div class="accomodation-card-description-stars">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
+								</div>
+							</div>
+
+							<div class="accomodation-card-individual">
+								<picture class="accomodation-card-picture">
+									<source 
+									media="(max-width: 798px)"
+									srcset="/assests/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+									/>
+									<img src="/assests/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="eisetopia picture">
+								</picture>
+								<div class="accomodation-card-description">
+									<h4>Auberge la Cannebiere</h4>
+									<p>Night starting at 25 &euro;</p>
+									<div class="accomodation-card-description-stars">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
+								</div>
+							</div>
+
+							<div class="accomodation-card-individual">
+								<picture class="accomodation-card-picture">
+									<source 
+									media="(max-width: 798px)"
+									srcset="/assests/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+									/>
+									<img src="/assests/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="eisetopia picture">
+								</picture>
+								<div class="accomodation-card-description">
+									<h4>Auberge la Cannebiere</h4>
+									<p>Night starting at 25 &euro;</p>
+									<div class="accomodation-card-description-stars">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
+								</div>
+							</div>
+
+							<div class="accomodation-card-individual">
+								<picture class="accomodation-card-picture">
+									<source 
+									media="(max-width: 798px)"
+									srcset="/assests/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+									/>
+									<img src="/assests/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="eisetopia picture">
+								</picture>
+								<div class="accomodation-card-description">
+									<h4>Auberge la Cannebiere</h4>
+									<p>Night starting at 25 &euro;</p>
+									<div class="accomodation-card-description-stars">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
+								</div>
+							</div>
+
+							<div class="accomodation-card-individual">
+								<picture class="accomodation-card-picture">
+									<source 
+									media="(max-width: 798px)"
+									srcset="/assests/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+									/>
+									<img src="/assests/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="eisetopia picture">
+								</picture>
+								<div class="accomodation-card-description">
+									<h4>Auberge la Cannebiere</h4>
+									<p>Night starting at 25 &euro;</p>
+									<div class="accomodation-card-description-stars">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+						<h4><a href="#">Show more</a></h4>
+					</div>					
+					<!-- END of accomodation -->
+					<!--++++++++++++++++++++++++++++++++++-->	
+
+					<!--++++++++++++++++++++++++++++++++++-->
+					<!-- START of MOST POPULAR -->
+					<div class="mostpopular-wrapper">
+						<!-- <h3>Most Popular</h3>
+						<h4><i class="fas fa-chart-line"></i></h4> -->
+						<h3>Most Popular <i class="fas fa-chart-line"></i></h3>	
+						<div class="mostpopular-card-galery">
+							<div class="mostpopular-card-individual">	
+								<img src="/assests/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="nicate-lee picture">
+								<div class="mostpopular-card-description">
+									<h4>Auberge la Cannebiere</h4>
+									<p>Night starting at 25 &euro;</p>
+									<div class="mostpopular-card-description-stars">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
+								</div>
+							</div>
+
+							<div class="mostpopular-card-individual">	
+								<img src="/assests/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="nicate-lee picture">
+								<div class="mostpopular-card-description">
+									<h4>Auberge la Cannebiere</h4>
+									<p>Night starting at 25 &euro;</p>
+									<div class="mostpopular-card-description-stars">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
+								</div>
+							</div>
+							<div class="mostpopular-card-individual">	
+								<img src="/assests/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="nicate-lee picture">
+								<div class="mostpopular-card-description">
+									<h4>Auberge la Cannebiere</h4>
+									<p>Night starting at 25 &euro;</p>
+									<div class="mostpopular-card-description-stars">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+					<!-- END of MOST POPULAR -->
+					<!--++++++++++++++++++++++++++++++++++-->
+				</section>
+				<!-- END of ACCOMODATION and MOST POPULAR cards -->
+
+				<!-- START of ACTIVITIES -->
+				<section class="activities-section">
+					<div class="activities-card-galery">
+						<div class="activities-card-individual">
+							<img src="/assests/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="florian-wehde picture">
+							<h4>Old Port 1</h4>
+						</div>
+						<div class="activities-card-individual">
+							<img src="/assests/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="florian-wehde picture">
+							<h4>Old Port 2</h4>
+						</div>
+						<div class="activities-card-individual">
+							<img src="/assests/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="florian-wehde picture">
+							<h4>Old Port 3</h4>
+						</div>
+						<div class="activities-card-individual">
+							<img src="/assests/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="florian-wehde picture">
+							<h4>Old Port 4</h4>
+						</div>
+						<div class="activities-card-individual">
+							<img src="/assests/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="florian-wehde picture">
+							<h4>Old Port 5</h4>
+						</div>
+						<div class="activities-card-individual">
+							<img src="/assests/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="florian-wehde picture">
+							<h4>Old Port 6</h4>
+						</div>	
+					</div>
+				</section>
+				<!-- END of ACTIVITIES -->
+			</main>
+
+			<!-- ======================== -->
+			<!-- END main section of page -->
+			<!-- ======================== -->
+
+			<!-- ======================== -->
+			<!-- START footer section of page -->
+			<!-- ======================== -->
+
+			<footer>
+				<section class="footer-wrapper">
+					<div class="footer-about">
+						<h4>
+							About
+						</h4>
+						<ul>
+							<li>Site Map</li>
+							<li>Site Map</li>
+							<li>Site Map</li>
+						</ul>
+					</div>
+
+					<div class="footer-accomodation">
+						<h4>
+							Our Accomodations
+						</h4>
+						<ul>
+							<li>Quality Assesment</li>
+							<li>Quality Assesment</li>
+						</ul>
+					</div>
+
+					<div class="footer-contact">
+						<h4>
+							Assistance
+						</h4>
+						<ul>
+							<li>Help Desk</li>
+							<li>Help Desk</li>
+						</ul>
+					</div>
+				</section>
+			</footer>
+
+			<!-- ======================== -->
+			<!-- END footer section of page -->
+			<!-- ======================== -->
+		</div>
+	</body>
 </html>
