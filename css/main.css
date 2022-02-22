@@ -165,7 +165,7 @@ main{
 		border-radius: 20px;
 		box-shadow: var(--box-shadow);		
 	}	
-	.accomodation-card-individual .accomodation-card-picture img{
+	.accomodation-card-individual img{
 		width: 100%;
 		height: 56%;
 		object-fit: cover;
@@ -370,7 +370,7 @@ main{
 		height: 200px;
 		margin:15px;
 	}	
-	.accomodation-card-individual .accomodation-card-picture img{			
+	.accomodation-card-individual img{			
 		height: 50%;
 	}
 	
