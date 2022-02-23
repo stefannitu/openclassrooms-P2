@@ -1,0 +1,389 @@
+
+            /* =====Start of VARIABLES =====*/
+:root {
+	--blue: #0065fc;
+	--light-blue: #deebff;
+	--gray: #f2f2f2;
+	--box-shadow:5px 5px 16px 0 rgba(0,0,0,0.2);
+}
+            /* =====END of VARIABLES =====*/
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	font-family: "Raleway", sans-serif;
+}
+            /* ++++++++ START of DESKTOP-version ++++++++*/
+            /* =====Start of logo + nav +search + filters =====*/
+header {
+	width: 96%;
+	margin:20px auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+header .menu-list {
+	list-style: none;
+	display: flex;	
+}
+header li{
+    /* <li> padding on top and bottom, matches <a> padding */
+	padding: 15px 0 15px 0; 
+}
+header nav a{
+	text-decoration: none;
+	color: black;
+	padding: 15px 50px 15px 50px;
+	border-width:3px 0 0 0;
+	border-style: solid;
+	border-color:var(--gray);		
+}
+header nav a:hover{
+	text-decoration: none;
+	color: var(--blue);
+	border-color: var(--blue);
+}
+main{
+	width: 97%;
+	margin:20px auto;
+}
+.search-form{ 		
+	display: flex;	
+	align-items: stretch;
+	box-shadow: var(--box-shadow);
+	border-radius: 10px;
+	max-width: fit-content;
+	margin-top:20px;
+}
+.search-form label[for="location-input"]{
+	background-color: var(--gray);	
+	padding: 12px 20px 12px 20px;
+	border-radius: 10px 0 0 10px;		
+}
+.location-input{
+	padding: 10px;
+	margin:0 1px 0 1px;
+	font-weight: bold;
+	border: 0;		
+}
+.submit-location{	
+	padding:10px 15px 10px 15px;
+	border-radius: 0 10px 10px 0;
+	border:0;	
+	background-color:var(--blue);
+	color: white;
+	font-weight: bold;	
+}
+.search-form .submit-location i{
+    /* hidden icon from button will appear in mobile version only */
+	display:none;
+}
+	.filters-menu-list{
+		display: flex;
+		flex-wrap: wrap;		
+		gap:40px;  
+		align-items: center;
+		margin:20px 0 20px 0;		
+		list-style-type: none;		
+	}
+	.filters-menu-list .filters-menu-item{
+		/* preventin menu item box to be less then */
+		/* min-width:fit-content;				 */
+	}		
+	.filters-menu-list .filters-menu-item a{ 		
+		padding:10px 10px 10px 0;		
+		border-radius: 30px;
+		/* text-decoration: none; */
+		font-weight: bold;
+		/* text-color */
+		color: black;	
+		box-shadow: var(--box-shadow);		
+	}	
+	.filters-menu-list .filters-menu-item .filters-menu-item-content{ 		
+		padding:0 20px 0 0;		
+		border-radius: 30px;		
+		font-weight: bold;
+		box-shadow: var(--box-shadow);		
+	}	
+	.filters-menu-list .filters-menu-item i{		
+		border-radius:30px;
+		padding: 25px 25px;		
+		background-color: var(--gray);
+		color: var(--blue);	
+	}
+	.filters-menu-list .filters-menu-item span{
+	    /* margin between text and icon */
+		margin-left: 5px;
+		/* margin-right: 20px; */
+	}
+
+	.search-filters-mention{
+		max-width: 370px;
+		display: flex;
+		gap:10px;	
+	}
+            /* =====End of logo + nav +search + filters===== */
+	main a,a:hover,a:visited{
+		text-decoration: none;
+		color: black;
+	}
+
+            /* =======START of ACCOMODATION-MOSTPOPULAR======= */
+	.accomodation-mostpopular-section{
+		margin-top:10px;
+		display: flex;		
+		gap:20px;
+		justify-content: space-between;
+	}
+	.accomodation-wrapper{
+		background-color: var(--gray);
+		border-radius: 30px;
+		padding: 20px;			
+		max-width: 70%;
+		display: flex;
+		flex-direction: column;
+		/* i am forced to use a gap of 10px because otherwise 3 card will not fit on line  */
+		gap: 10px;		
+	}
+	.accomodation-wrapper .accomodation-card-gallery{
+		display: flex;
+		flex-wrap: wrap;
+		gap:20px;
+		justify-content: space-around;
+	}
+	.accomodation-wrapper .accomodation-card-gallery .accomodation-card-individual{
+		background-color: white;
+		/* limiting number of card to 3 per line */
+		flex-basis: 25%;
+		/* card min max size */
+		min-width: 188px;
+		max-width: 420px;
+		min-height: fit-content;
+		max-height: 300px;
+		flex-grow: 1;
+		flex-shrink: 1;		
+		padding: 3px;
+		border-radius: 20px;
+		box-shadow: var(--box-shadow);		
+	}	
+	.accomodation-card-individual img{
+		width: 100%;
+		height: 56%;
+		object-fit: cover;
+		border-radius:20px 20px 0 0;
+	}
+	.accomodation-card-individual .accomodation-card-description{
+		margin:5px;
+		height: 40%;		
+		/*spacing elements in description */
+		display: flex;
+		flex-direction: column;
+		/* gap: 10px; */
+		justify-content: space-around;
+	}
+	.accomodation-card-individual .accomodation-card-description .accomodation-card-description-stars{
+		color:var(--blue);
+	}
+	.mostpopular-wrapper{
+		background-color: var(--gray);
+		border-radius: 30px;
+		padding: 30px 30px;	
+		max-width: 27%;
+		min-width: 300px;
+		/* flex-basis: auto; */
+		display: flex;
+		flex-direction: column;
+	}
+
+	.mostpopular-wrapper .mostpopular-card-galery{
+		margin-top: 20px;
+		display: flex;		
+		flex-wrap: wrap;
+		gap:20px;
+		width: fit-content;
+		align-self: center;
+		justify-content: center;
+		
+		
+	}	         	
+	.mostpopular-wrapper h3 i{
+		float: right;
+	}
+	.mostpopular-wrapper .mostpopular-card-individual{
+		background-color: white;		
+		padding: 3px;
+		border-radius: 20px;
+		box-shadow: var(--box-shadow);
+		flex-shrink: 1;
+		max-width: 450px;		
+		min-width: 260px;
+		min-height: 140px;
+		display: flex;
+		justify-content: space-between;		
+	}	
+	
+	
+ 	.mostpopular-wrapper .mostpopular-card-individual img{
+        /* = height of mostpopular-card-individual  */		
+		width: 40%;
+		height: 100%;
+		object-fit: cover;
+		border-radius:20px 0 0 20px;		
+	}
+	
+	.mostpopular-wrapper .mostpopular-card-individual .mostpopular-card-description{		
+		/* width and height: according to mostpopular-card-individual */		
+		width: 50%;	
+		height: 90%;	
+		display: flex;
+		flex-direction: column;		
+		padding: 2px;
+	}
+	.mostpopular-wrapper .mostpopular-card-individual .mostpopular-card-description .mostpopular-card-description-stars{
+		color: var(--blue);
+		/* stars align to bottom of card */
+		margin-top:auto;
+	}
+            /* =======END of ACCOMODATION-MOSTPOPULAR======= */
+
+            /* =====START of ACTIVITIES =====*/	
+	.activities-section .activities-card-galery{
+		margin-top:30px;
+		display:grid;
+		grid-template-columns: repeat(4,1fr);
+		grid-template-rows:repeat(2,180px);
+		grid-auto-flow: column;	
+		gap:10px;	
+	}
+	.activities-section .activities-card-individual{
+		width:100%;		
+		max-width: 350px;
+		/* center activities cards */
+		margin:0 auto 0 auto;
+		padding: 5px;
+		border-radius: 20px;
+		box-shadow: var(--box-shadow);		
+	}
+	.activities-section .activities-card-individual:nth-child(1),
+	.activities-section .activities-card-individual:nth-child(4){
+		grid-row: 1/span2;
+	}	
+	.activities-section .activities-card-individual h4{
+		margin:auto 0 auto 5px;
+	}
+	.activities-section .activities-card-individual img{
+		width:100%;
+		height: 70%;
+		border-radius:20px 20px 0 0;
+		object-fit: cover;
+	}
+            /* ====END of ACTIVITIES==== */
+
+            /* ======START of FOOTER====== */
+	footer{
+		width: 100%;
+		background-color: var(--gray);		
+		padding: 40px;
+	}
+	.footer-wrapper{
+		width: 70%;
+		display: flex;
+		justify-content: space-between;		
+	}
+	.footer-wrapper ul{
+		list-style-type: none;
+		line-height: 1.5;
+	}
+	.footer-wrapper h4{
+		margin-bottom: 15px;
+		
+	}
+            /* ======END of FOOTER====== */
+
+            /* +++++END of DESKTOP-version +++++*/
+
+
+            /* ++++START of MOBILE-version +++++*/
+
+@media only screen and (max-width: 798px) {			
+	header {		
+		flex-direction: column;				
+	}	
+	header nav a{	
+		/* change nav border position */	
+		border-width:0 0 3px 0;	
+	}   
+	main{
+		padding:5px;
+	} 		
+	.submit-location{
+		border-radius: 10px;
+		padding: 13px 15px;
+	}
+	.search-form .submit-location span{
+        /* hide text from submit button */
+		display:none; 
+	}
+	.search-form .submit-location i{
+        /* display icon on submit button */
+		display:inline-block;  
+	}		
+	.filters-menu-list .filters-menu-item i{
+		border-radius:30px;
+		padding: 20px 20px;		
+	}	
+	.filters-menu-list .first-item{
+        /* making the first item "Filters" take the whole row */
+		flex-basis: 100%;
+	}	
+	.filters-menu-item:nth-child(3),
+	.filters-menu-item:nth-child(5){
+		order:1;
+	}
+	.accomodation-mostpopular-section{
+		flex-direction: column;
+	}
+	.accomodation-wrapper{
+		order: 2;
+		background-color: transparent;		
+	}
+	.mostpopular-wrapper{
+		/* new width  */
+		min-width: 100%;
+	}
+	.accomodation-wrapper {		
+		min-width: 100%;
+		/* padding: 30px; */
+	}
+	/* .accomodation-wrapper .accomodation-card-gallery .accomodation-card-individual{
+		flex-basis: 350px;
+		max-width: 450px;
+		flex-grow: 1;
+		height: 200px;
+		margin:15px;
+	}	 */
+	.accomodation-card-individual img{			
+		height: 50%;
+	}
+	.mostpopular-wrapper .mostpopular-card-galery .mostpopular-card-individual{
+		min-width:350px;
+		max-width: 450px;
+		flex-grow: 1;
+	}	
+	.activities-section .activities-card-galery{
+		grid-template-rows: repeat(6,220px);
+	}
+	.activities-section .activities-card-galery .activities-card-individual{		
+		margin:auto;
+		grid-column: 1/-1;	
+		grid-row: auto;					
+		width: 100%;
+		height: 200px;		
+	}	
+	.footer-wrapper{
+		width: 100%;
+		flex-direction: column;
+		gap:30px;
+	}       
+}
+/* +++++++END of MOBILE-version +++++++*/
