@@ -4,6 +4,7 @@
     --gray:#F2F2F2;
     --box-shadow: 5px 5px 16px 0 rgba(0,0,0,0.2);
     --box-shadow-blue: 5px 5px 16px 0 rgba(0,101,252, 0.589);
+    --photo-link-small:"4_small";
 }
 *{
     margin: 0;
