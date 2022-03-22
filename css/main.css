@@ -13,8 +13,6 @@
 }
 html{
 font-family: 'Raleway', sans-serif;
-/* max-width: 2200px; */
-/* margin:auto; */
 }
 .wrapper-header{
     width: 99%;
@@ -154,7 +152,7 @@ main{
     flex-grow: 1;   
     flex-direction: column;
     max-width: 400px;
-    min-width: 220px;  
+    min-width: 280px;  
     flex-basis: 30%;
     max-height: 350px;  
     background-color: white;
@@ -185,6 +183,9 @@ main{
     border-radius: 30px;
     max-width: 450px;   
     min-width: 330px;
+}
+.wrapper-popular i{
+    float:right;
 }
 .wrapper-popular a,
 .wrapper-popular a:visited{
@@ -289,6 +290,7 @@ main{
     width: 100%;
     white-space: nowrap;
 }
+
 @media screen and (max-width: 768px){
    .wrapper-header{
        flex-direction: column;
@@ -358,7 +360,6 @@ main{
     }
     .activities-card{
         max-width: 550px;
-        /* margin: 0 auto 20px auto; */
     }  
     .container-footer_links{
         flex-direction: column;
