@@ -245,7 +245,9 @@ main{
 
 .activities-card_gallery_columns {
     flex-basis: 24%;
-    min-width: 300px; 
+    min-width: 330px; 
+    padding: 10px;
+
 }
 
 .activities-card{
@@ -290,7 +292,11 @@ main{
     width: 100%;
     white-space: nowrap;
 }
-
+@media screen and (max-width:1400px){
+    .activities-card_gallery_columns{       
+        flex-basis: 50%;
+    }
+}
 @media screen and (max-width: 768px){
    .wrapper-header{
        flex-direction: column;
@@ -344,12 +350,13 @@ main{
         max-height: 220px;
     }
     .activities-card_gallery{
-        margin: auto;
+        /* margin: auto; */
         flex-direction: column;        
     }
     .activities-card_gallery_columns {
-        flex-basis: 24%;
+        flex-basis: 50%;
         min-width: 300px;
+        /* max-width: 500px; */
     }
     .activities-card_picture img{
         max-height: 220px;
